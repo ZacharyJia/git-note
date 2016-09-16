@@ -1,0 +1,32 @@
+{
+  "name": "git-note",
+  "version": "0.0.1",
+  "description": "A git-based cloud notebook",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "git-note",
+    "notebook",
+    "electron"
+  ],
+  "author": "Zachary",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "electron": "^1.3.4"
+  },
+  "dependencies": {
+    "fileutil": "^1.1.1",
+    "node-notifier": "^4.6.1",
+    "simple-git": "^1.48.0"
+  }
+}

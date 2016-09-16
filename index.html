@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bower_components/AdminLTE/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="./bower_components/AdminLTE/dist/css/skins/_all-skins.min.css">
+
+    <link rel="stylesheet" href="./bower_components/editor.md/css/editormd.min.css">
+    <script>
+      window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min.js');
+    </script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bower_components/AdminLTE/dist/js/app.min.js"></script>
+    <script src="./bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  </head>
+
+  <body class="skin-purple-light" id="app">
+
+  <header class="main-header">
+    <a href="#" class="logo">
+      <!-- LOGO -->
+      Git-Note
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success">4</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="./bower_components/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" style="height: 160px; width: 160px" alt="User Image">
+                      </div>
+                      <h4>
+                        Sender Name
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <p>Message Excerpt</p>
+                    </a>
+                  </li><!-- end message -->
+                  ...
+                </ul>
+              </li>
+              <li class="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </li>
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">10</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 10 notifications</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="ion ion-ios-people info"></i> Notification title
+                    </a>
+                  </li>
+                  ...
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+          <!-- Tasks: style can be found in dropdown.less -->
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-flag-o"></i>
+              <span class="label label-danger">9</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 9 tasks</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <h3>
+                        Design some buttons
+                        <small class="pull-right">20%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li><!-- end task item -->
+                  ...
+                </ul>
+              </li>
+              <li class="footer">
+                <a href="#">View all tasks</a>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="./bower_components/AdminLTE/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Alexander Pierce</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="./bower_components/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="col-xs-4 text-center">
+                  <a href="#">Followers</a>
+                </div>
+                <div class="col-xs-4 text-center">
+                  <a href="#">Sales</a>
+                </div>
+                <div class="col-xs-4 text-center">
+                  <a href="#">Friends</a>
+                </div>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main-sidebar">
+    <!-- Inner sidebar -->
+    <div class="sidebar">
+      <!-- user panel (Optional) -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="./bower_components/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>User Name</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+
+      </div><!-- /.user-panel -->
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu">
+        <li class="header">
+          我的笔记本
+          <div class="pull-right info">
+            <a href="#" onclick="refresh()"><i style="font-size: 20px" class="fa fa-refresh"></i></a>
+          </div>
+        </li>
+
+        <template v-for="dir in dirs">
+          <li class="note-dir"><a href="#" onclick="getFile(this, '{{ dir }}')">{{ dir }}</a></li>
+        </template>
+
+      </ul><!-- /.sidebar-menu -->
+
+    </div><!-- /.sidebar -->
+  </div><!-- /.main-sidebar -->
+
+
+    <div class="content-wrapper fixed">
+
+      <div class="col-sm-3" >
+        <div id="note-list">
+          <ul class="sidebar-menu skin-blue-light">
+            <template v-for="file in files">
+              <li><a href="#" onclick="getFileContent(this)">{{ file }}</a></li>
+            </template>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <div class="editormd" id="content" style="height:auto">
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+  <script src="./bower_components/editor.md/editormd.min.js"></script>
+  <script>
+  const {ipcRenderer} = require('electron')
+  var Vue = require('Vue');
+  var editor;
+  $(function() {
+      editor = editormd("content", {
+        width: "100%",
+        height: ($('.main-sidebar').height() - 20) + 'px',
+        emoji: true,
+        path : "./bower_components/editor.md/lib/",
+        toolbarIconsClass : {
+          save: "fa-floppy-o"  // 指定一个FontAawsome的图标类
+        },
+        toolbarIcons : function() {
+          // Or return editormd.toolbarModes[name]; // full, simple, mini
+          // Using "||" set icons align right.
+          return ['save'].concat(editormd.toolbarModes['simple']);
+        },
+        toolbarHandlers: {
+          save : function(cm, icon, cursor, selection) {
+            save(vm.currentFile);
+          }
+        }
+      });
+    });
+
+  $("#note-list").slimScroll({
+    height: ($('.main-sidebar').height() - 20) + 'px',
+    allowPageScroll: false
+  });
+
+  $(window).resize(function(){
+   $("#content").css('height', ($('.main-sidebar').height() - 20) + 'px');
+   $("#note-list").slimScroll({
+     height: ($('.main-sidebar').height() - 20) + 'px',
+     allowPageScroll: false
+   });
+   $("html").css('height', $('.main-sidebar').height() + 'px')
+  });
+
+  function quit() {
+    ipcRenderer.send('quit');
+  }
+
+  var vm = new Vue({
+    el: "#app",
+    data: {
+      dirs: [],
+      currentDir: '',
+      files: [],
+      currentFile: ''
+    }
+  });
+
+  ipcRenderer.on('dirList', (event, arg) => {
+    console.log('receive dir list');
+    vm.dirs = arg.dirs;
+  });
+
+  ipcRenderer.on('fileList', (event, arg) => {
+    vm.files = arg.notes;
+  });
+
+  ipcRenderer.on('fileContent', (event, content) => {
+    editor.setMarkdown(content);
+  });
+
+  function refresh() {
+    ipcRenderer.send('getDirList');
+  }
+
+  function getFile(obj, dir) {
+    ipcRenderer.send('getFileList', dir);
+    $(".note-dir").removeClass('active');
+    $(obj).parent().addClass('active');
+    vm.currentDir = dir;
+  }
+
+  function getFileContent(obj) {
+    file = vm.currentDir + '/' + $(obj).html();
+    ipcRenderer.send('getFileContent', file);
+    vm.currentFile = file;
+  }
+
+  function save(name) {
+    ipcRenderer.send('save', name, 'manual', editor.getMarkdown());
+  }
+
+  function auto_save(name) {
+    ipcRenderer.send('save', name, 'auto');
+  }
+  refresh();
+    // You can also require other files to run in this process
+    // require('./renderer.js')
+    // let myNotification = new Notification('Title', {
+    //   body: 'Lorem Ipsum Dolor Sit Amet'
+    // })
+
+    // var simleGit = require('simple-git')("/Users/zachary/mygit");
+    //
+    //
+    // var log = simleGit.log({file: 'a.txt'}, function (err, log) {
+    //   $("#content").html(log.all[0].date + '    ' + log.all[0].message);
+    //   console.log(log);
+    // });
+  </script>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "git-note",
+  "description": "A git-based cloud notebook",
+  "main": "main.js",
+  "authors": [
+    "Zachary"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "git-note",
+    "notebook",
+    "electron"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AdminLTE": "adminlte#^2.3.6",
+    "editor.md": "^1.5.0",
+    "bootstrap": "^3.3.7",
+    "jquery-slimscroll": "^1.3.8"
+  }
+}
