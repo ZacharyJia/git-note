@@ -225,14 +225,26 @@
         toolbarIcons : function() {
           // Or return editormd.toolbarModes[name]; // full, simple, mini
           // Using "||" set icons align right.
-          return ['save'].concat(editormd.toolbarModes['simple']);
+
+          var tools = ['save'].concat(editormd.toolbarModes['simple']);
+          return tools;
         },
         toolbarHandlers: {
           save : function(cm, icon, cursor, selection) {
             save(vm.currentFile);
           }
+        },
+        onload: function() {
+          var keyMap = {
+            "Cmd-S": function(cm) {
+              save(vm.currentFile);
+            }
+          };
+          this.addKeyMap(keyMap);
         }
       });
+      refresh();
+
     });
 
   $("#note-list").slimScroll({
@@ -266,6 +278,8 @@
   ipcRenderer.on('dirList', (event, arg) => {
     console.log('receive dir list');
     vm.dirs = arg.dirs;
+    vm.currentDir = '';
+    vm.files = [];
   });
 
   ipcRenderer.on('fileList', (event, arg) => {
@@ -294,13 +308,13 @@
   }
 
   function save(name) {
+    if (name == '') return;
     ipcRenderer.send('save', name, 'manual', editor.getMarkdown());
   }
 
   function auto_save(name) {
     ipcRenderer.send('save', name, 'auto');
   }
-  refresh();
     // You can also require other files to run in this process
     // require('./renderer.js')
     // let myNotification = new Notification('Title', {
